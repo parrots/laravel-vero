@@ -28,7 +28,7 @@
         "SamLittler\\LaravelVero\\VeroServiceProvider"
       ],
       "aliases": {
-        "Vero": "SamLittler\\LaravelVero\\VeroFacade"
+        "LaravelVero": "SamLittler\\LaravelVero\\VeroFacade"
       }
     }
   }

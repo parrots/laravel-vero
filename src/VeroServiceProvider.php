@@ -14,7 +14,7 @@ class VeroServiceProvider extends ServiceProvider
         });
 
         $this->app->bind('vero', function () {
-            return $this->app->resolveProvider(\Vero::class);
+            return $this->app->make(\Vero::class);
         });
     }
 

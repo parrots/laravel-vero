@@ -1,0 +1,35 @@
+{
+  "name": "samlittler/laravel-vero",
+  "description": "A laravel extension for interacting with the Vero API using the Vero PHP library",
+  "type": "library",
+  "require": {
+    "php": ">=7.1.0",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "getvero/vero-php": "^1.0",
+    "illuminate/support": "^6.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Littler",
+      "email": "samlittler57@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "SamLittler\\LaravelVero\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SamLittler\\LaravelVero\\VeroServiceProvider"
+      ],
+      "aliases": {
+        "Vero": "SamLittler\\LaravelVero\\VeroFacade"
+      }
+    }
+  }
+}

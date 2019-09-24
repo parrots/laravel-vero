@@ -10,7 +10,7 @@ class VeroServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(\Vero::class, function ($app) {
-            return new \Vero(self::config('api_key'));
+            return new \Vero(self::config('auth_token'));
         });
 
         $this->app->bind('vero', function () {
